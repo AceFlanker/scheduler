@@ -57,3 +57,8 @@ Both servers run concurrently; requests are proxied from the Webpack development
 
 - The client application communicates with a WebSocket server.
 - When a user books or cancels an interview, all connected users see the update in their browser.
+
+## Sreenshots
+!['Submission Form'](https://github.com/AceFlanker/scheduler/blob/master/docs/appointment-form.png)
+
+!['Form Deletion'](https://github.com/AceFlanker/scheduler/blob/master/docs/appointment-delete.png)
