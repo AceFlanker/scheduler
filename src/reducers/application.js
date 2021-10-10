@@ -5,7 +5,7 @@ export default function reducer(state, action) {
   const { day, days, appointments, interviewers } = action;
 
   const reducers = {
-    SET_DAY() {return {...state, day}},
+    // SET_DAY() {return {...state, day}},
     SET_APPLICATION_DATA() {return {...state, days, appointments, interviewers}},
     SET_INTERVIEW() {return {...state, appointments, days}}
   }
