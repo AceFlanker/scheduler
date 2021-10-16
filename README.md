@@ -8,6 +8,15 @@
 
 Install dependencies with `npm install`.
 
+## Dependencies
+
+ - axios v0.21.4
+ - classnames v2.2.6
+ - normalize.css v8.0.1
+ - react" v16.9.0
+ - react-dom v16.9.0
+ - react-scripts v3.0.0
+
 ## Running Webpack Development Server
 
 ```sh
