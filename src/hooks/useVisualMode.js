@@ -14,6 +14,6 @@ export default function useVisualMode(initial) {
     setMode(history[1]);
   };
 
-  // return { mode, transition, back };
-  return [mode, transition, back];
+  return { mode, transition, back };
+  // return [mode, transition, back];
 }

@@ -21,8 +21,8 @@ export default function Appointment(props) {
   const ERROR_SAVE = 'ERROR_SAVE';
   const ERROR_DELETE = 'ERROR_DELETE';
 
-  // const { mode, transition, back } = useVisualMode(props.interview ? SHOW : EMPTY);
-  const [ mode, transition, back ] = useVisualMode(props.interview ? SHOW : EMPTY);
+  const { mode, transition, back } = useVisualMode(props.interview ? SHOW : EMPTY);
+  // const [ mode, transition, back ] = useVisualMode(props.interview ? SHOW : EMPTY);
 
   function save(name, interviewer) {
     const interview = {
@@ -32,7 +32,7 @@ export default function Appointment(props) {
     transition(SAVING, true);
     props.bookInterview(props.id, interview)
       .then(() => transition(SHOW))
-      .catch(() => transition(ERROR_SAVE, true));
+      .catch(() => transition(ERROR_SAVE));
   }
 
   function cancel() {

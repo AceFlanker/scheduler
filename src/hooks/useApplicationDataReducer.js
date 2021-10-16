@@ -2,7 +2,6 @@ import { useEffect, useReducer, useCallback } from "react";
 import axios from 'axios';
 import reducer from "reducers/application";
 const url = process.env.REACT_APP_WEBSOCKET_URL;
-console.log(process.env.REACT_APP_WEBSOCKET_URL);
 
 export default function Application(props) {
 
